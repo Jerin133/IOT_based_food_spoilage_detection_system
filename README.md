@@ -56,6 +56,7 @@ Update the following lines in the code with your specific credentials:
 char auth[] = "Your_Blynk_Auth_Token";
 char ssid[] = "Your_WiFi_Name";
 char pass[] = "Your_WiFi_Password";
+```
 
 ## 📊 Threshold Calibration
 The **ESP32** features a 12-bit Analog-to-Digital Converter (ADC), which provides a reading range from **0 to 4095**. Because the MQ gas sensor requires a heating element, initial readings may spike before stabilizing.
