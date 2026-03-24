@@ -36,12 +36,12 @@ This project uses an **ESP32** and an **MQ-series gas sensor** to monitor the fr
 ## Circuit Connections
 > **Note:** Ensure all GND pins are common for stable analog readings.
 
-* **MQ Sensor VCC** ➡️ ESP32 5V (or VIN)
-* **MQ Sensor GND** ➡️ ESP32 GND
-* **MQ Sensor AO** ➡️ ESP32 **GPIO 34**
-* **Red LED** ➡️ ESP32 **GPIO 2**
-* **Green LED** ➡️ ESP32 **GPIO 15**
-* **Buzzer** ➡️ ESP32 **GPIO 4**
+* **MQ Sensor VCC** -> ESP32 5V (or VIN)
+* **MQ Sensor GND** -> ESP32 GND
+* **MQ Sensor AO** -> ESP32 **GPIO 34**
+* **Red LED** -> ESP32 **GPIO 2**
+* **Green LED** -> ESP32 **GPIO 15**
+* **Buzzer** -> ESP32 **GPIO 4**
 
 ## Software Setup
 
