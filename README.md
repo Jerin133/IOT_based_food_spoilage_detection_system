@@ -1,10 +1,10 @@
-# 🍏 Food Spoilage Detection System (IoT)
+# Food Spoilage Detection System (IoT)
 
 This project uses an **ESP32** and an **MQ-series gas sensor** to monitor the freshness of food in real-time. It provides local alerts and remote notifications via the **Blynk IoT** platform.
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 * [Features](#-features)
 * [Hardware Components](#-hardware-components)
 * [Circuit Connections](#-circuit-connections)
@@ -13,7 +13,7 @@ This project uses an **ESP32** and an **MQ-series gas sensor** to monitor the fr
 
 ---
 
-## 🚀 Features
+## Features
 - **Continuous Monitoring:** Real-time detection of methane and organic gases.
 - **Visual & Audio Alerts:** Green LED for "Fresh", Red LED + Buzzer for "Spoiled".
 - **IoT Integration:** Remote data viewing on the Blynk App.
@@ -22,7 +22,7 @@ This project uses an **ESP32** and an **MQ-series gas sensor** to monitor the fr
 
 ---
 
-## 🛠️ Hardware Components
+## Hardware Components
 | Component | Specification |
 | :--- | :--- |
 | **Microcontroller** | ESP32 Dev Module |
@@ -33,7 +33,7 @@ This project uses an **ESP32** and an **MQ-series gas sensor** to monitor the fr
 
 ---
 
-## 🔌 Circuit Connections
+## Circuit Connections
 > **Note:** Ensure all GND pins are common for stable analog readings.
 
 * **MQ Sensor VCC** ➡️ ESP32 5V (or VIN)
@@ -43,7 +43,7 @@ This project uses an **ESP32** and an **MQ-series gas sensor** to monitor the fr
 * **Green LED** ➡️ ESP32 **GPIO 15**
 * **Buzzer** ➡️ ESP32 **GPIO 4**
 
-## 💻 Software Setup
+## Software Setup
 
 ### 1. Libraries Required
 Install these via the Arduino Library Manager:
@@ -58,7 +58,7 @@ char ssid[] = "Your_WiFi_Name";
 char pass[] = "Your_WiFi_Password";
 ```
 
-## 📊 Threshold Calibration
+## Threshold Calibration
 The **ESP32** features a 12-bit Analog-to-Digital Converter (ADC), which provides a reading range from **0 to 4095**. Because the MQ gas sensor requires a heating element, initial readings may spike before stabilizing.
 
 | Status | ADC Value | Hardware Response |
@@ -69,7 +69,7 @@ The **ESP32** features a 12-bit Analog-to-Digital Converter (ADC), which provide
 
 ---
 
-## 📧 Notification Logic
+## Notification Logic
 The system utilizes the `Blynk.logEvent()` function to bridge the gap between hardware and the user's smartphone/inbox.
 
 ### 1. The Trigger
