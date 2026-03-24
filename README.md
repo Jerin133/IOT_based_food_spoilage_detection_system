@@ -84,4 +84,5 @@ The Blynk Cloud is configured with a **Critical Event** handler:
 
 ### 3. Visual Dashboard
 The real-time methane value is continuously streamed to **Virtual Pin V12**, which can be viewed on a Gauge or Chart widget in the Blynk App.
+
 ---
